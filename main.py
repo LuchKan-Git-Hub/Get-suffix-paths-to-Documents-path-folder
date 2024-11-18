@@ -29,9 +29,9 @@ def main(doc_path, suffix):
                     # Move the file to the Images folder
                     shutil.move(full_file_path, document_folder)
                     print(f"Moved: {filename} to {document_folder}")
-        except Exception as e:
+        except Exception as error:
             colorama.init()
-            print(colorama.Fore.RED + f"Error: {e}")
+            print(colorama.Fore.RED + f"Error: {error}")
 
 # get data from user
 print('Will add a path or identity which one you need')
